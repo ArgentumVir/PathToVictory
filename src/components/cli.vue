@@ -1,8 +1,10 @@
 <!-- cli.vue -->
 
 <template>
-	<div id="cli">
-		<div>Test</div>
+	<div>
+		<form>
+			<input type="text">
+		</form>
 	</div>
 </template>
 
