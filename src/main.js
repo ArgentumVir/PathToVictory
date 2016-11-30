@@ -6,7 +6,7 @@ import cli from './components/cli.vue';
 
 Vue.component('cli', cli);
 
-let vm = new Vue({
+new Vue ({
 	store,
 	el: '#app',
 	render: h => h(App)
