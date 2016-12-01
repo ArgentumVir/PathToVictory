@@ -12,7 +12,7 @@
 		name: 'cli',
 		data () {
 			return {
-				outputText: ``
+				outputText: `> Welcome.\n`
 			};
 		},
 		methods: {
