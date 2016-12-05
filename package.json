@@ -4,16 +4,19 @@
   "author": "Silverman",
   "private": true,
   "scripts": {
-    "start": "node server",
-    "dev": "start cmd /k nodemon server && cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "dev-partial": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "dev": "start cmd /k nodemon server.js && cross-env NODE_ENV=development webpack-dev-server --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules && npm start"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "natural": "^0.4.0",
     "vue": "^2.0.1",
+    "vue-resource": "^1.0.3",
     "vue-router": "^2.1.0",
-    "vuex": "^2.0.0"
+    "vuex": "^2.0.0",
+    "wordpos": "^1.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
